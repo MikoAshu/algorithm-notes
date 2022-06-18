@@ -20,6 +20,12 @@ To push 3, we need to pop smaller (or equal) elements first
 After: [5,4,3]
 ```
 
+## When to use Monotonic Stack
+
+Since it has an O(n) complexity, it can be used as a solution to many **Range queries in an array** questions.
+* To maintain **Maximum** and **Minimum** elements in range and keeps the order of the elements in the range.
+* **Range queries in an array** problem
+* When the **order** of the items needs to be maintained and if **each** needs to be compared to find the **min/max** 
 ## Notes
 
 For a mono-**decreasing** stack:
@@ -59,6 +65,35 @@ public:
         return ans;
     }
 };
+```
+
+## Leetcode 739 - Daily Temperatures
+
+On this question, the simple solution is to create a stack of array to keep track of the value and the index and add them to the stack after removing the lesser elements from the stack and calculating the index between them
+
+to keep track of the next element, we will have an array to store the difference - 
+```cpp
+int[] res = new int[temperatures.length];
+```
+
+Then finally return the result array 
+
+```cpp
+class Solution {
+    public int[] dailyTemperatures(int[] temperatures) {
+        if(temperatures.length == 0) return new int[] {-1, -1};
+        Stack<int[]> stack = new Stack<>();
+        int[] res = new int[temperatures.length];
+        for(int i=0; i < temperatures.length; i++) {
+            while(!stack.isEmpty() && stack.peek()[0] < temperatures[i]){
+                int[] temp = stack.pop();
+                res[temp[1]] = i - temp[1];
+            }
+            stack.push(new int[]{temperatures[i], i});
+        }
+        return res;
+    }
+}
 ```
 
 ## Problems
