@@ -1,9 +1,9 @@
-# Introduction
+# README
 
-I put all my notes for algorithms here.
+This is a fork from the repo [https://github.com/lzl124631x/algorithm](https://github.com/lzl124631x/algorithm) with additional notes and solutions to the questions.
 
-* Gitbook: [https://liuzhenglaichn.gitbook.io/algorithm/](https://liuzhenglaichn.gitbook.io/algorithm/)
-* Github Repo: [https://github.com/lzl124631x/algorithm](https://github.com/lzl124631x/algorithm)
+* Gitbook: [https://michael-ashenafi.gitbook.io/algorithm-notes](https://michael-ashenafi.gitbook.io/algorithm-notes)
+* Github Repo: [https://github.com/MikoAshu/algorithm-notes](https://github.com/MikoAshu/algorithm-notes)
 
 ## Remember during interview
 
@@ -15,5 +15,6 @@ I put all my notes for algorithms here.
 ## Resources
 
 William Fiset
+
 * https://www.youtube.com/channel/UCD8yeTczadqdARzQUp29PJw
 * https://github.com/williamfiset/Algorithms
