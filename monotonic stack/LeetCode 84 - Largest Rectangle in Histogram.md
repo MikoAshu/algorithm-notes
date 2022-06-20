@@ -5,8 +5,6 @@ If we need to calculate both `nextSmaller` and `prevSmaller` arrays, we can do i
 The following code is for [84. Largest Rectangle in Histogram (Hard)](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 ```cpp
-// OJ: https://leetcode.com/problems/largest-rectangle-in-histogram/
-// Author: github.com/lzl124631x
 // Time: O(N)
 // Space: O(N)
 class Solution {
