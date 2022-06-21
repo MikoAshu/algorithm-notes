@@ -126,7 +126,6 @@
 * [Meet In The Middle](meet-in-the-middle.md)
 * [Minmax](minmax.md)
 * [Mono Deque](mono-deque.md)
-* [Monotonic Stack](monotonic-stack-1.md)
 * [Offline Query](offline-query.md)
 * [P And Np](p-and-np.md)
 * [Prefix State Map](prefix-state-map.md)
