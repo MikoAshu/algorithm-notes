@@ -37,7 +37,7 @@ For a mono-**decreasing** stack:
 * The algorithm, generally speaking, takes O(N) Time and O(N) Space as we are storing one element at a time and we do the callculations on one pass.
 
 
-![](.gitbook/assets/monostack.png)
+![](../.gitbook/assets/monostack.png)
 
 Take [402. Remove K Digits (Medium)](https://leetcode.com/problems/remove-k-digits/) for example, since we are looking for lexigraphically **smallest** subsequence, we should use mono-**increasing** stack.
 
