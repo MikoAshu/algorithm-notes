@@ -29,16 +29,14 @@ After: [5,4,3]
 ```
 
 ## When to use Monotonic Stack
-```
-```
+
 * Since it has an O(n) complexity, it can be used as a solution to many **Range queries in an array** questions.
 * To maintain **Maximum** and **Minimum** elements in range and keeps the order of the elements in the range.
 * **Range queries in an array** problem
 * When the **order** of the items needs to be maintained and if **each** needs to be compared to find the **min/max** 
 
 * If you see words like **_in order_**, **_lexicographically increasing or decreasing_**, **_Max element/ min element_**
-```
-```
+
 ## Notes
 
 For a mono-**decreasing** stack:
@@ -48,6 +46,7 @@ For a mono-**decreasing** stack:
 * Since the information contained inside the stack is limited, there might be a need to store an additional data outside the stack - e.g **max element** inside
 * The algorithm, generally speaking, takes O(N) Time and O(N) Space as we are storing one element at a time and we do the callculations on one pass.
 * If elements are _**not next to eachother**_ and a relationship is required between them, a 2 or more pass might be required. E.g - [Leetcode 316. Remove Duplicate letters](https://leetcode.com/problems/remove-duplicate-letters/)
+* On last element/ sequence inside the monotonic stack, there might/ usually is an edge case where we might miss a value and that has to be put into consideration .. see example [402. Remove K Digits (Medium)](leetcode-402-remove-k-digits.md)
 
 
 ![](../.gitbook/assets/monostack.png)
